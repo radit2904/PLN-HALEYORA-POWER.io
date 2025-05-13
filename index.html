@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>PLN Haleyora Power</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    header img {
+      height: 100px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    section.hidden {
+      display: none;
+    }
+
+    h1 {
+      color: #007bff;
+    }
+
+    .news-item {
+      margin-bottom: 25px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+    }
+
+    .news-link {
+      color: #007bff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="plnlogo2023.png" alt="Logo Haleyora Power" />
+      <h2 style="margin: 0;">PLN Haleyora Power</h2>
+    </div>
+    <nav>
+      <a onclick="navigate('home')">Home</a>
+      <a onclick="navigate('about')">About Us</a>
+      <a onclick="navigate('news')">News</a>
+      <a onclick="navigate('contact')">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <!-- HOME -->
+     <!-- HOME -->
+<section id="home">
+  <h1>Selamat Datang di PLN Haleyora Power</h1>
+  <img src="pt haleyora power.webp" alt="PLN Image" style="max-width:40%; height:auto; border-radius: 10px; margin: 20px 0;">
+  <p><strong>PLN Haleyora Power</strong> adalah anak perusahaan dari PLN (Persero) yang bergerak dalam bidang jasa operasi dan pemeliharaan jaringan distribusi tenaga listrik dan pelayanan pelanggan.</p>
+  <p>Kami hadir untuk memperkuat infrastruktur kelistrikan nasional dan meningkatkan keandalan layanan kepada masyarakat.</p>
+  <h3>Nilai Perusahaan</h3>
+  <ul>
+    <li><strong>Integritas:</strong> Kami bekerja secara jujur, profesional, dan bertanggung jawab.</li>
+    <li><strong>Inovasi:</strong> Terus berinovasi untuk memberikan solusi terbaik di bidang kelistrikan.</li>
+    <li><strong>Komitmen Pelayanan:</strong> Fokus pada kepuasan pelanggan dan peningkatan mutu layanan.</li>
+  </ul>
+</section>
+
+
+
+    <!-- ABOUT -->
+    <section id="about" class="hidden">
+      <h1>Tentang Kami</h1>
+      <p>PT Haleyora Power didirikan sebagai bentuk transformasi pelayanan teknis dan operasional kelistrikan oleh PLN. Kami menjadi ujung tombak dalam mendukung distribusi tenaga listrik di seluruh pelosok negeri.</p>
+      <h3>Visi</h3>
+      <p>Menjadi perusahaan jasa kelistrikan yang terdepan dan terpercaya di Indonesia.</p>
+      <h3>Misi</h3>
+      <ul>
+        <li>Memberikan layanan kelistrikan yang andal dan berkualitas tinggi.</li>
+        <li>Mendorong efisiensi dan inovasi dalam operasional.</li>
+        <li>Menjaga keselamatan kerja dan kelestarian lingkungan.</li>
+      </ul>
+      <h3>Sejarah Singkat</h3>
+      <p>Didirikan pada tahun 2011, Haleyora Power telah melayani berbagai unit PLN di seluruh Indonesia dalam aspek pemeliharaan jaringan distribusi, manajemen layanan gangguan, dan pelayanan pelanggan.</p>
+    </section>
+
+    <!-- NEWS -->
+    <section id="news" class="hidden">
+      <h1>Berita Terbaru</h1>
+      <div class="news-item">
+        <h3>Haleyora Power Perluas Layanan Distribusi</h3>
+        <p>Dalam rangka memperkuat jaringan listrik nasional, Haleyora Power resmi memperluas cakupan operasional ke wilayah Sumatera dan Kalimantan.</p>
+        <span class="news-link" onclick="navigate('news-detail')">Baca selengkapnya</span>
+      </div>
+      <div class="news-item">
+        <h3>Kerjasama Strategis dengan PLN Distribusi Jawa</h3>
+        <p>Haleyora Power menjalin kemitraan dengan PLN Distribusi Jawa untuk meningkatkan layanan pemeliharaan jaringan tegangan menengah dan rendah.</p>
+        <span class="news-link" onclick="navigate('news-detail')">Baca selengkapnya</span>
+      </div>
+    </section>
+
+    <!-- NEWS DETAIL -->
+    <section id="news-detail" class="hidden">
+      <h1>Detail Berita: Perluasan Layanan Distribusi</h1>
+      <p>Haleyora Power memperluas jangkauan layanan ke berbagai daerah baru di Sumatera dan Kalimantan. Ekspansi ini dilakukan guna memperkuat sistem distribusi tenaga listrik yang handal dan responsif terhadap kebutuhan masyarakat.</p>
+      <p>Dalam pelaksanaannya, perusahaan mengintegrasikan teknologi terbaru dalam monitoring dan pemeliharaan jaringan, serta meningkatkan kapasitas SDM teknis melalui pelatihan berkala.</p>
+      <span class="news-link" onclick="navigate('news')">← Kembali ke daftar berita</span>
+    </section>
+
+    <!-- CONTACT US -->
+    <section id="contact" class="hidden">
+      <h1>Hubungi Kami</h1>
+      <form>
+        <label>Nama Lengkap</label>
+        <input type="text" placeholder="Nama Anda" required />
+        
+        <label>Email</label>
+        <input type="email" placeholder="Email Anda" required />
+
+        <label>Subjek</label>
+        <input type="text" placeholder="Subjek Pesan" />
+
+        <label>Pesan</label>
+        <textarea rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+
+      <h3>Lokasi Kami</h3>
+      <p>Gedung 19 PT PLN (Persero) Pusertif,<br>
+      Jl. Laboratorium No.1, RW.1, Kel. Duren Tiga,<br>
+      Kec. Pancoran, Kota Jakarta Selatan, 12760</p>
+      <p>Telepon: +6221 7919 2517</p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 PT Haleyora Power. All rights reserved.
+  </footer>
+
+  <script>
+    function navigate(pageId) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(sec => sec.classList.add("hidden"));
+      document.getElementById(pageId).classList.remove("hidden");
+      window.scrollTo(0, 0);
+    }
+  </script>
+
+</body>
+</html>
